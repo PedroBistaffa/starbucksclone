@@ -166,3 +166,54 @@ body {
     object-fit: cover; /*Faz o mesmo papel do background-size*/
     object-position: center;
 }
+
+/* Footer - Inicio */
+.footer-area {
+    height: 100vw;
+    width: 100vw;
+    padding: 50px;
+    margin-left: 129px;
+    display: flex;
+}
+
+.footer-content {
+    display: flex;
+    height: 80%;
+    width: 80%;
+    
+}
+
+.footer-row {
+    display: flex;
+}
+
+.footer-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.col-title {
+    display: flex;
+    align-content: ;
+    padding: 30px;
+    color: #59312D;
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col li {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.footer-col li a {
+    text-decoration: none;
+    color: #A27070;
+}
+
+.footer-col li a:hover {
+    color: #222
+}
