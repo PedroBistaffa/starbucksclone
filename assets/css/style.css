@@ -8,9 +8,9 @@
 }
 
 /* 
-# - seletor por id
-div - seletor por nome da tag
-. - selector por classe
+    # - seletor por id
+    div - seletor por nome da tag
+    . - selector por classe
 */
 body {
     width: 100vw;
@@ -167,53 +167,77 @@ body {
     object-position: center;
 }
 
-/* Footer - Inicio */
+/* Formatação do footer */
 .footer-area {
-    height: 100vw;
+    height: 665px;
     width: 100vw;
-    padding: 50px;
-    margin-left: 129px;
+    padding-top: 50px;
+    margin-top: 30px;
     display: flex;
+    justify-content: flex-start;
+    border-top: 1px solid #CCC;
+    box-shadow: 0 -6px 6px -6px;
 }
 
 .footer-content {
     display: flex;
-    height: 80%;
-    width: 80%;
+    max-width: 200px;
+    margin-left: 5%;
     
 }
 
 .footer-row {
     display: flex;
+    justify-content: flex-start;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
 }
 
 .footer-col {
-    display: flex;
-    flex-direction: column;
+    width: 250px;
+    text-align: start;
+    min-width: 200px;
 }
 
 .col-title {
-    display: flex;
-    align-content: ;
-    padding: 30px;
-    color: #59312D;
+    font-size: 1.8rem;
+    line-height: 1.41;
+    font-weight: 400;
+    margin-bottom: 2.4rem;
 }
 
 .footer-col ul {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
     list-style: none;
+    width: 100%;
 }
 
 .footer-col li {
-    display: flex;
-    flex-direction: column;
-    padding: 15px;
+    list-style-type: none;
+    width: 100%;
 }
 
 .footer-col li a {
+    width: 180px;
+    padding-top: 12px;
+    padding-bottom: 12px;
     text-decoration: none;
-    color: #A27070;
+    color: rgba(0, 0, 0, .56);
 }
 
 .footer-col li a:hover {
     color: #222
 }
+
