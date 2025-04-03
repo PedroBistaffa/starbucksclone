@@ -1,3 +1,26 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');*/
+
+@font-face {
+    font-family: "SoDo Sans";
+    src: url("../fonts/SoDoSans-Bold.woff");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "SoDo Sans";
+    src: url("../fonts/SoDoSans-Regular.woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "SoDo Sans";
+    src: url("../fonts/SoDoSans-SemiBold.woff");
+    font-weight: 600;
+    font-style: normal;
+}
+
 /* mini reset */
 * {
     margin: 0; /* espacamento | distancia da borda para fora */
@@ -5,6 +28,8 @@
     border: 0;
     /* utiliza espaco interno mantem tamanho width e height */
     box-sizing: border-box; 
+    /*font-family: "Nunito", sans-serif;*/
+    font-family: "SoDo Sans", "ellograph-cf", "monospace";
 }
 
 /* 
@@ -174,28 +199,23 @@ body {
     padding-top: 50px;
     margin-top: 30px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     border-top: 1px solid #CCC;
-    box-shadow: 0 -6px 6px -6px;
+    box-shadow: 0 -6px 6px -6px #222;
 }
 
 .footer-content {
-    display: flex;
-    max-width: 200px;
-    margin-left: 5%;
-    
+    width: 90%;
 }
 
 .footer-row {
-    display: flex;
-    justify-content: flex-start;
-    gap: 50px;
-    flex-wrap: wrap;
+    height: auto;
 }
 
 .flex-row {
     display: flex;
     flex-direction: row;
+    gap: 50px;
 }
 
 .flex-col {
@@ -204,9 +224,7 @@ body {
 }
 
 .footer-col {
-    width: 250px;
-    text-align: start;
-    min-width: 200px;
+    min-width: 180px;
 }
 
 .col-title {
@@ -217,8 +235,6 @@ body {
 }
 
 .footer-col ul {
-    display: flex;
-    flex-direction: column;
     gap: 12px;
     list-style: none;
     width: 100%;
@@ -241,3 +257,30 @@ body {
     color: #222
 }
 
+.footer-history-img {
+    width: 100px;
+}
+
+.separator {
+    width: 100%;
+    height: 2px;
+    background-color: rgba(0, 0, 0, 56);
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.footer-col i {
+    font-size: 32px;
+    margin-right: 12px;
+}
+
+.footer-col a {
+    text-decoration: none;
+    color: #000;
+}
+
+.footer-col .flex-row ul {
+    display: flex;
+    margin-top: 12px;
+    padding-top: 12px;
+}
